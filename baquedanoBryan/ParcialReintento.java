@@ -108,6 +108,7 @@ class ParcialReintento {
         try {
             Thread.sleep(1000 * segundos);
         } catch (InterruptedException e) {
+             // La interrupción del hilo no afecta al comportamiento visual; se suprime deliberadamente
         }
     }
 
