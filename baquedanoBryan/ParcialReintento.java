@@ -46,7 +46,7 @@ class ParcialReintento {
                             System.out.print(":[#]:");
                         } else {
                             if (lightOn){lightPerHour++;}
-                            windowDraw(blindOpen, lightOn, lightning);
+                            drawWindow(blindOpen, lightOn, lightning);
                         }
 
                         boolean elevator = 3 == window % 6;
@@ -83,15 +83,15 @@ class ParcialReintento {
         System.out.println(TOP);
     }
 
-    static void windowDraw(boolean blindOpen, boolean lightOn, boolean lightning){
-        String windowDraw = ":[ ]:";
+    static void drawWindow(boolean blindOpen, boolean lightOn, boolean lightning){
+        String symbol = ":[ ]:";
         
         if (blindOpen && lightOn){
-            windowDraw = ":[*]:";
+            symbol = ":[*]:";
         } else if (blindOpen){
-            windowDraw = ":[º]:";
+            symbol = ":[º]:";
         }
-        System.out.print(windowDraw);
+        System.out.print(symbol);
     }
 
     static void drawBuildingBottom(){
