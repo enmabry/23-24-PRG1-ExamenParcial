@@ -49,6 +49,7 @@ class ParcialReintento {
                             windowDraw(blindOpen, lightOn, lightning);
                         }
 
+                        // window % 6 == 3: la posición 3 de cada grupo de 6 ventanas es el hueco del ascensor
                         boolean elevator = 3 == window % 6;
                         System.out.print(elevator ? "[    ]":"");
                     }
