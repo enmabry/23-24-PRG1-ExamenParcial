@@ -9,7 +9,7 @@ class ParcialReintento {
             String noEnergyMessage = "";
             int column = 0;
             int row = 0;
-            int stadistic = 0;
+            int dailyLightCount = 0;
 
             boolean maintenance = Math.random() < 0.05;
 
@@ -57,15 +57,15 @@ class ParcialReintento {
                 drawBuildingBottom();
                 System.out.println();
 
-                stadistic = stadistic + lightPerHour;
+                dailyLightCount = dailyLightCount + lightPerHour;
                 message = 
                     "Dia " + day + " - " + hour + ":00h - Consumo hora: " + lightPerHour + 
                     noEnergyMessage + 
                     "\nCONSUMOS: ";
                 System.out.print(message);
             }
-            energyAverage = energyAverage + stadistic;
-            energyConsumed = energyConsumed + "D" + day + " " + stadistic + " | ";
+            energyAverage = energyAverage + dailyLightCount;
+            energyConsumed = energyConsumed + "D" + day + " " + dailyLightCount + " | ";
         }
         energyAverage = energyAverage / 7;
         System.out.println(energyConsumed);
