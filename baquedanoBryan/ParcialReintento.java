@@ -77,9 +77,9 @@ class ParcialReintento {
 
     static void drawBuildingTop(){
         final String TOP = """
-                         __/\\__
-            |    |    |  |####|  |    |    |  
-          ===================================="""; 
+                        __/\\__
+            |    |    |  |####|  |    |    |
+        ====================================""";
         System.out.println(TOP);
     }
 
